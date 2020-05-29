@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/stackhack/static/css/main.d7e9fc49.chunk.css",
+    "main.js": "/stackhack/static/js/main.cfe4050a.chunk.js",
+    "main.js.map": "/stackhack/static/js/main.cfe4050a.chunk.js.map",
+    "runtime-main.js": "/stackhack/static/js/runtime-main.04214981.js",
+    "runtime-main.js.map": "/stackhack/static/js/runtime-main.04214981.js.map",
+    "static/css/2.53823a3d.chunk.css": "/stackhack/static/css/2.53823a3d.chunk.css",
+    "static/js/2.40a97a61.chunk.js": "/stackhack/static/js/2.40a97a61.chunk.js",
+    "static/js/2.40a97a61.chunk.js.map": "/stackhack/static/js/2.40a97a61.chunk.js.map",
+    "index.html": "/stackhack/index.html",
+    "precache-manifest.636552d4bfd16f0e2548a196974facbc.js": "/stackhack/precache-manifest.636552d4bfd16f0e2548a196974facbc.js",
+    "service-worker.js": "/stackhack/service-worker.js",
+    "static/css/2.53823a3d.chunk.css.map": "/stackhack/static/css/2.53823a3d.chunk.css.map",
+    "static/css/main.d7e9fc49.chunk.css.map": "/stackhack/static/css/main.d7e9fc49.chunk.css.map",
+    "static/js/2.40a97a61.chunk.js.LICENSE.txt": "/stackhack/static/js/2.40a97a61.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.04214981.js",
+    "static/css/2.53823a3d.chunk.css",
+    "static/js/2.40a97a61.chunk.js",
+    "static/css/main.d7e9fc49.chunk.css",
+    "static/js/main.cfe4050a.chunk.js"
+  ]
+}
