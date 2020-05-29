@@ -59,7 +59,7 @@ class Registration(Resource):
                             regn_type = regn_type, num_tickets = num_tickets, id_card = id_card)
         db.session.add(regn)
         db.session.commit()
-        return {"Registration" : "Success"}
+        return {"success" : "registration"}, 201
 
 class Detail(Resource):    
 
@@ -68,21 +68,22 @@ class Detail(Resource):
         reg = Registrations.query.filter_by(id = id).first()
         if reg:
             return reg.json()
-        else:
-            return {'id': 'not found'}, 404
+
+        return {'error': f'{id} not found'}, 404
     
     @jwt_required()
     def delete(self, id):
-
         reg = Registrations.query.filter_by(id = id).first()
-        db.session.delete(reg)
-        db.session.commit()
-
-        return {'note' : 'Delete Successful'}
+        if reg:
+            db.session.delete(reg)
+            db.session.commit()
+            return {'success' : 'delete'}, 204
+        
+        return {'error': f'{id} not found'}, 404
 
 class All(Resource):
     @jwt_required()
-    def get(self, page):
+    def get(self, page=1):
         regns = Registrations.query.all()
         regns = regns[(page-1)*15:(page)*15]
 
